@@ -283,7 +283,9 @@
         }
         
         /* Responsive */
-        @media (max-width: 768px) { .checkout-container { padding: 2rem 1.5rem; } .order-summary p { font-size: 1rem; } .order-details-form h2, .order-summary h2 { font-size: 1.6rem; } .form-group input[type="url"], .form-group input[type="number"], .form-group input[type="text"] { font-size: 1rem; padding: 0.9rem 1rem;} .total-price-display span { font-size: 1.2rem; } .terms-agreement label { font-size: 0.9rem; } #payment-section h3 { font-size: 1.4rem; } .payment-methods-select { gap: 1rem; } .payment-method-btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; } .payment-details { padding: 1.5rem; }
+        @media (max-width: 768px) { .checkout-container { padding: 2rem 1.5rem; } .order-summary p { font-size: 1rem; } .order-details-form h2, .order-summary h2 { font-size: 1.6rem; } .form-group input[type="url"], .form-group input[type="number"], .form-group input[type="text"] { font-size: 1rem; padding: 0.9rem 1rem;} .total-price-display span { font-size: 1.2rem; } .terms-agreement label { font-size: 0.9rem; } #payment-section h3 { font-size: 1.4rem; } .payment-methods-select { gap: 1rem; } .payment-method-btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; } .payment-details { padding: 1.5rem; 
+        
+        }
         
              html { font-size: 14px; }
              .section { padding: 5rem 0; }
@@ -295,7 +297,9 @@
              #main-footer .social-links { justify-content: center; }
              #ad-banner { max-width: calc(100vw - 40px); left: 20px; bottom: 20px; padding: 0.9rem 1.2rem; }
              #support-widget { bottom: 20px; right: 20px; }
+        #main-footer h4{ text-align: center}
         
+        #main-footer p{ text-align: center}
          }
         
         
@@ -320,17 +324,19 @@
 <body>
 
     <!-- Header (Include the full header HTML structure here) -->
+      <!-- Header -->
     <header id="main-header">
         <div class="container">
             <nav id="navbar">
-                <a href="index.html" class="logo"><i class="fas fa-atom"></i>Quantum SMM</a>
+                <a href="/" class="logo"><i class="fas fa-atom"></i>Quantum SMM</a>
                 <ul id="nav-links-desktop">
-                    <li><a href="index.html">Matrix</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/offers">Offers</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="https://utech-llc.github.io">U Tech</a></li>
                 </ul>
                 <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
@@ -338,12 +344,13 @@
             </nav>
         </div>
         <ul id="mobile-nav-links">
-             <li><a href="index.html">Matrix</a></li>
-             <li><a href="services.html">Services</a></li>
-             <li><a href="index.html#features">Features</a></li>
-             <li><a href="about.html">About Us</a></li>
-             <li><a href="contact.html">Contact Us</a></li>
-             <li><a href="index.html#faq">FAQ</a></li>
+           <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/offers">Offers</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="https://utech-llc.github.io">U Tech</a></li>
         </ul>
     </header>
 
@@ -382,20 +389,57 @@
 
     <!-- ****** END SUCCESS PAGE CONTENT ****** -->
 
-    <!-- Footer (Include the full footer HTML structure here) -->
-     <footer id="main-footer">
+ <footer id="main-footer">
         <div class="container">
-             <div class="footer-content">
+            <div class="footer-content">
                  <div class="footer-logo">Quantum SMM</div>
-                 <div class="footer-column footer-about"><h4>About Us</h4><p>Quantum SMM provides elite social media marketing services, focusing on speed, quality, and reliability for rapid growth.</p></div>
-                 <div class="footer-column footer-links-section"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul></div>
-                 <div class="footer-column footer-links-section"><h4>Service Categories</h4><ul class="footer-links"><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('Instagram'); else window.location.href='services.html#platform-filter'; return false;">Instagram</a></li><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('Facebook'); else window.location.href='services.html#platform-filter'; return false;">Facebook</a></li><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('YouTube'); else window.location.href='services.html#platform-filter'; return false;">YouTube</a></li><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('TikTok'); else window.location.href='services.html#platform-filter'; return false;">TikTok</a></li><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('Telegram'); else window.location.href='services.html#platform-filter'; return false;">Telegram</a></li><li><a href="services.html#platform-filter" onclick="if(window.filterPlatformFromLink) filterPlatformFromLink('all'); else window.location.href='services.html#platform-filter'; return false;">View All</a></li></ul></div>
-                 <div class="footer-column footer-contact"><h4>Connect & Support</h4><ul class="social-links"><li><a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a></li><li><a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank"><i class="fab fa-telegram-plane"></i></a></li><li><a href="tel:YOUR_PHONE_NUMBER"><i class="fas fa-phone"></i></a></li><li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li></ul><p><a href="mailto:support@quantumsmm.com">support@quantumsmm.com</a></p></div>
-                 <p class="copyright">System Build: v3.19 | © <span id="year"></span> Quantum SMM Network. All Rights Reserved. | Design Inspiration by Quantum Core Labs</p>
-             </div>
+                 <div class="footer-column footer-about">
+                    <h4>About Us</h4>
+                    <p>Quantum SMM provides elite social media marketing services, focusing on speed, quality, and reliability. We empower individuals and businesses to achieve rapid growth across various social platforms efficiently.</p>
+                 </div>
+                 <div class="footer-column footer-links-section">
+                     <h4>Quick Links</h4>
+                     <ul class="footer-links">
+                         <li><a href="/">Home</a></li>
+                         <li><a href="/services">Services</a></li>
+                         <li><a href="#features">Features</a></li>
+                         <li><a href="#who-benefits">Who Benefits</a></li>
+                         <li><a href="#payment-methods">Payments</a></li>
+                            <li><a href="/offers">Offers</a></li>
+                       <li><a href="/about">About Us</a></li>
+                       <li><a href="/contact">Contact Us</a></li>
+                         <li><a href="/menu">Menu</a></li>
+                     </ul>
+                 </div>
+ <div class="footer-column footer-links-section">
+                     <h4>More</h4>
+                     <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                         <li><a href="/terms">Terms of Service</a></li>
+                         <li><a href="/privecy">Privacy Policy</a></li>
+                   
+                         <li><a href="#features">Your TopUp Center</a></li>
+                         <li><a href="https://utech-llc.github.io/webux">WebUX Solution</a></li>
+                         <li><a href="https://utech-llc.github.io/greenshell">GreenShell</a></li>
+                         <li><a href="https://utech-llc.github.io/tools">Tools</a></li>
+                         <li><a href="https://utech-llc.github.io">U Tech LLC</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-column footer-contact">
+                    <h4>Connect & Support</h4>
+                     <ul class="social-links">
+                    
+                         <li><a href="https://wa.me/+8801781146747" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                         <li><a href="https://t.me/quantumsmm_bot" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                         <li><a href="tel:01781146747" aria-label="Call"><i class="fas fa-phone"></i></a></li>
+                         <li><a href="https://www.facebook.com/vivesquadhq" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                     </ul>
+                     <p><a href="mailto:utechfficial24@gmail.com">utechfficial24@gmail.com</a></p>
+                 </div>
+                 <p class="copyright">System Build: v1.3 | © <span id="year"></span> Quantum SMM . All Rights Reserved. | Design Inspiration by Quantum Core Labs | a brand of <a href="https://utech-llc.github.io>">U Tech LLC</a> | Developed by <a href="https://utech-llc.github.io/webux">WebUX Solution</a></p>
+            </div>
         </div>
-     </footer>
-
+    </footer>
     <!-- Support Widget & Ad Banner (Hidden on this page) -->
      <div id="support-widget" style="display: none;">...</div>
      <div id="ad-banner" style="display: none;">...</div>
