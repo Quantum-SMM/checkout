@@ -967,14 +967,14 @@
                       deleteCookie('pendingOrder');
                       // Store order data (passed as messageData) in sessionStorage for the success page
                       sessionStorage.setItem('lastOrder', JSON.stringify(messageData)); // FIXED: Use messageData
-                      window.location.href = 'http://localhost:8080/______%20quantum%20SmM____/checkout/success/index.html';
+                      window.location.href = 'http://localhost:8080/______%20quantum%20SmM____/checkout/success/index.html'; // Replace with your actual success page URL
                   } else {
                       console.error('Telegram API Error:', result);
                       alert(`Order submitted but notification failed. Please contact support with Order ID: ${clientOrderId}. Error: ${result.description || 'Unknown'}`);
                        // For learning purpose, still proceed to success page with the data we have
                        deleteCookie('pendingOrder');
                        sessionStorage.setItem('lastOrder', JSON.stringify(messageData)); // FIXED: Use messageData
-                       window.location.href = 'http://localhost:8080/______%20quantum%20SmM____/checkout/success/index.html';
+                       window.location.href = 'http://localhost:8080/______%20quantum%20SmM____/checkout/success/index.html'; // Replace with your actual success page URL
                   }
               } catch (error) {
                   console.error('Error sending to Telegram:', error);
@@ -1009,7 +1009,7 @@
                   const finalOrderData = {
                       ...currentOrderData, // Includes service details, rate, min/max
                       link: linkInput.value.trim(),
-                      quantity: parseInt(quantityInput.value, 10),
+                      quantity: parseInt(quantityInput.value, 10), // <-- CORRECTED HERE
                       totalPrice: parseFloat(totalPriceDisplay.textContent.replace('$', '')), // USD price
                       paymentMethod: selectedPaymentMethod,
                       transactionId: trxId,
@@ -1046,4 +1046,4 @@
     }); // End DOMContentLoaded
 </script>
 </body>
-</html>
+    </html>
